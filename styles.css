@@ -1,0 +1,606 @@
+@font-face {
+  font-family: 'NewYork';
+  src: url(fonts/NewYork.otf);
+}
+
+@font-face {
+  font-family: 'NeueMachinaR';
+  src: url(fonts/NeueMachina-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Pixels';
+  src: url(fonts/NeuePixelSans.ttf);
+}
+
+@font-face {
+  font-family: 'NeueMachina';
+  src: url(fonts/NeueMachina-Light.otf);
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url(fonts/Merriweather-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 900px;
+    background-color: black;
+}
+
+.banner{
+  height: 100px;
+  padding: 20px;
+  font-family: 'Pixels';
+  text-align: right;
+  color: white;
+  margin-right: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  display: inline-block;
+  margin-left: 1em;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.about-tag{
+  color: purple;
+  font-size: 20px;
+}
+
+.about-tag:hover{
+  color: #9F2B68;
+}
+
+.projects-tag{
+  color: purple;
+  font-size: 20px;
+}
+
+.projects-tag:hover{
+  color: #9F2B68;
+}
+
+.skills-tag{
+  color: purple;
+  font-size: 20px;
+}
+
+.skills-tag:hover{
+  color: #9F2B68;
+}
+
+.name{
+  font-size: 140px;
+  text-align: center;
+  vertical-align: baseline;
+  font-family: 'NewYork';
+  color: white;
+  margin-left: 10px;
+}
+
+.mail-address{
+  font-size: 15px;
+  align-items: flex-end;
+  text-align: center;
+  font-family: 'Pixels';
+  color: purple;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  width:100%;
+  align-items:center;
+  justify-content:center;
+  flex: auto;
+  margin-top: 250px;
+}
+
+.linkedin{
+  color: white;
+}
+
+.linkedin:hover{
+  color: #aaa;
+}
+
+.github{
+  text-indent: 1em;
+  color: white;
+
+}
+
+.github:hover{
+  color: #aaa;
+}
+
+.email{
+  text-indent: 1em;
+  color: white;
+}
+
+.email:hover{
+  color: #aaa;
+}
+
+ion-icon {
+  font-size: 29px;
+}
+
+.about-description{
+  padding: 79px;
+  width: auto;
+  color: white;
+  margin-top: 140px;
+}
+
+.description{
+  color: white;
+  font-family: 'Merriweather';
+  text-align: left;
+  font-size: 36px;
+}
+
+.full-description{
+  font-size: 20px;
+  color: white;
+  font-family: 'NeueMachina';
+  width: 50%;
+}
+
+.cmpsc{
+  font-family: 'Pixels';
+  color: purple;
+}
+
+.projects-heading{
+  color: white;
+  font-size: 45px;
+  font-family: 'NeueMachina';
+  text-align: center;
+  margin-top: 160px;
+  padding: 90px;
+}
+
+.card{
+  width: 250px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.card__inner{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.card__inner.is-flipped{
+  transform: rotateY(180deg);
+
+}
+
+.card__face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front{
+  background-color: #352384;
+  background-image: linear-gradient(315deg, #51087E 10%, #fee8d6 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--front h2{
+  color: white;
+  font-size: 32px;
+  font-family: 'Pixels';
+  text-align: center;
+}
+
+.card__face--back{
+  background-color: #f3f3f3;
+  transform: rotateY(180deg);
+}
+
+.card__content{
+  width: 100%;
+  height: 100%;
+}
+
+.card__header{
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header:after{
+  background-color: #352384;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+  background-image: linear-gradient(315deg, #51087E 10%, #fee8d6 74%);
+}
+
+.lang{
+  text-align: center; 
+  margin-right: 10px;
+  font-family: 'Pixels';
+  color: white;
+  font-size: 24px;
+}
+
+.card-description{
+  font-family: 'NeueMachina'; 
+  text-align: left; 
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 1.4;
+}
+
+.card0{
+  width: 250px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.card__inner0{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.card__inner0.is-flipped{
+  transform: rotateY(180deg);
+
+}
+
+.card__face0{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front0{
+  background-color: #7fcec5;
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--front0 h2{
+  color: white;
+  font-size: 32px;
+  font-family: 'Pixels';
+  text-align: center;
+}
+
+.card__face--back0{
+  background-color: #f3f3f3;
+  transform: rotateY(180deg);
+}
+
+.card__content0{
+  width: 100%;
+  height: 100%;
+}
+
+.card__header0{
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header0:after{
+  background-color: #7fcec5;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+}
+
+.card1{
+  width: 250px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.card__inner1{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.card__inner1.is-flipped{
+  transform: rotateY(180deg);
+
+}
+
+.card__face1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front1{
+  background-image: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--front1 h2{
+  color: white;
+  font-size: 32px;
+  font-family: 'Pixels';
+  text-align: center;
+}
+
+.card__face--back1{
+  background-color: #f3f3f3;
+  transform: rotateY(180deg);
+}
+
+.card__content1{
+  width: 100%;
+  height: 100%;
+}
+
+.card__header1{
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header1:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+  background-image: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
+#skills{
+  margin-top: 60px;
+}
+
+.skills-heading{
+  color: white;
+  font-family: 'NeueMachina';
+  font-size: 45px;
+  text-align: center;
+  margin-top: 160px;
+  padding: 90px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+}
+
+.skill, .skill1{
+  background: black;
+  font-family: 'Pixels';
+  width: 318px;
+  color: #fff;
+  padding: 180px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.inner{
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.bar{
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236,0,140,1) 0%, rgba(252,103,103,1) 100%);
+}
+
+.html{
+  width: 90%;
+  animation: html 3s;
+}
+
+.css{
+  width: 65%;
+  animation: css 3s;
+}
+
+.python{
+  width: 90%;
+  animation: python 3s;
+}
+
+.javascript{
+  width: 35%;
+  animation: javascript 3s;
+}
+
+.c{
+  width: 60%;
+  animation: c 3s;
+}
+
+.java{
+  width: 65%;
+  animation: java 3s;
+}
+
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 65%;
+  }
+}
+
+@keyframes python{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 35%;
+  }
+}
+
+@keyframes c{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 60%;
+  }
+}
+
+@keyframes java{
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 65%;
+  }
+}
+
+.contact-section{
+  margin-bottom: 10px;
+}
+
+.contact-heading{
+  color: white;
+  font-family: 'NeueMachina';
+  font-size: 130px;
+  text-align: center;
+}
+
+.contact-description{
+  color: white;
+  font-family: 'NeueMachina';
+  font-size: 30px;
+  text-align: center;
+}
+
+.email-address{
+  margin-left: 100px;
+  color: white;
+  font-family: 'Pixels';
+  font-size: 36px;
+  text-align: left;
+}
+
+.back-to-top{
+  width: 10%;
+  margin-left: 70%;
+  margin-top: 20px;
+}
+
+.fonts{
+  font-size: 28px; 
+  color: grey; 
+  font-family: 'NewYork';
+}
+
+.fonts-description{
+  
+  font-size: 22px; 
+  color: grey; 
+  font-family: 'NeueMachina';
+  width: 40%;
+  margin-left: 100px
+}
